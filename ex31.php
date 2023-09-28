@@ -53,7 +53,7 @@
         $newfile = fopen("contactes31b.txt", "w");
         foreach ($file as $contacto) {
             $resultado = str_replace(",","#",$contacto);
-            fwrite($newfile, $resultado."\n");
+            fwrite($newfile, $resultado);
         }
         ?>
     </body>
